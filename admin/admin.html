@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - SnackPoint</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+  <div class="admin-layout">
+    <aside class="sidebar">
+      <h2>Panel Admin</h2>
+      <a href="admin.html" class="active">📦 Productos</a>
+      <a href="../index.html">🏠 Volver a la tienda</a>
+    </aside>
+
+    <main class="admin-content">
+      <h1>Gestión de productos</h1>
+
+      <!-- Formulario -->
+      <form id="formProducto" class="admin-form" novalidate>
+        <div class="field">
+          <label>Código</label>
+          <input type="text" id="codigo" minlength="3" required>
+        </div>
+        <div class="field">
+          <label>Nombre</label>
+          <input type="text" id="nombre" maxlength="100" required>
+        </div>
+        <div class="field">
+          <label>Precio</label>
+          <input type="number" id="precio" min="0" step="0.01" required>
+        </div>
+        <div class="field">
+          <label>Stock</label>
+          <input type="number" id="stock" min="0" step="1" required>
+        </div>
+        <div class="field">
+          <label>Categoría</label>
+          <select id="categoria" required>
+            <option value="">Seleccione</option>
+            <option>Snacks</option>
+            <option>Bebidas</option>
+          </select>
+        </div>
+        <button type="submit" class="btn">Guardar</button>
+      </form>
+
+      <!-- Tabla -->
+      <h2>Listado de productos</h2>
+      <table class="table" id="tablaProductos">
+        <thead>
+          <tr>
+            <th>Código</th>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Stock</th>
+            <th>Categoría</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </main>
+  </div>
+
+  <script src="/js/admin.js"></script>
+</body>
+</html>

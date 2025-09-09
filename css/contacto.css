@@ -1,0 +1,109 @@
+/* ====== HEADER ====== */
+body{
+    margin: 0;
+    padding: 0;
+    background-color:rgb(14, 13, 13);
+}
+header {
+  background: linear-gradient(rgb(34, 34, 34), rgb(100, 100, 100));
+  padding: 15px 25px;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 25px;
+}
+
+header nav a img {
+  height: 45px;
+}
+
+header nav a {
+  color: rgb(255, 124, 2);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #60a5fa;
+}
+
+
+
+/* ====== SECCIÓN INTRO ====== */
+.contacto-intro {
+  text-align: center;
+  margin: 40px auto 20px;
+  max-width: 700px;
+  color: white;
+}
+
+.contacto-intro h1 {
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+/* ====== FORMULARIO ====== */
+.contacto-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: rgb(148, 60, 2) 0px 7px 30px;
+}
+
+.contacto-form .field {
+  margin-bottom: 20px;
+}
+
+.contacto-form label {
+  display: block;
+  margin-bottom: px;
+  font-weight: bold;
+  color: #535353;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+  width: 580px;
+  padding: 10px;
+  border: 1px solid #757575;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contacto-form input:focus,
+.contacto-form textarea:focus {
+  border-color: #2563eb;
+  outline: none;
+  box-shadow: 0 0 4px rgba(37,99,235,0.5);
+}
+
+.contacto-form .btn {
+  display: inline-block;
+  background: #2563eb;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contacto-form .btn:hover {
+  background: #1d4ed8;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  background: linear-gradient(rgb(34, 34, 34), rgb(100, 100, 100));
+  padding: 15px 25px;
+  color: #f9fafb;
+  text-align: center;
+  margin-top: 40px;
+}

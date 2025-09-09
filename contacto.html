@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - SnackPoint</title>
+  <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html"><img src="imagenes/logo.png" alt="SnackPoint"></a>
+      <a class="ap" href="productos.html">Productos</a>
+      <a class="an" href="nosotros.html">Nosotros</a>
+      <a class="ac active" href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contacto-intro">
+      <h1>📩 Contáctanos</h1>
+      <p>¿Tienes dudas, sugerencias o quieres trabajar con nosotros?  
+      Rellena el formulario y te responderemos lo antes posible.</p>
+    </section>
+
+    <section class="contacto-form">
+      <form id="formContacto" novalidate>
+        <div class="field">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" placeholder="Tu nombre" required>
+        </div>
+
+        <div class="field">
+          <label for="correo">Correo</label>
+          <input type="email" id="correo" placeholder="tucorreo@ejemplo.com" required>
+        </div>
+
+        <div class="field">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 SnackPoint</p>
+  </footer>
+
+  <script src="js/contacto.js"></script>
+</body>
+</html>
+

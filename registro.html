@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro - SnackPoint</title>
+  <link rel="stylesheet" href="css/registro.css">
+</head>
+<body>
+  <header class="headerR">
+    <nav class="navR">
+        <a href="index.html"><img src="imagenes/logo.png"></a>
+    </nav>
+  </header>
+  <main>
+    <div class="FondoReg"> <img src="imagenes/fondoReg.jpg"></div>
+
+    <section class="form-card">
+      <p class="crearCuentaR">Crear cuenta</p>
+      <form id="formRegistro" novalidate>
+        <h3 class="nomReg">Nombre</h3>
+        <div class="field">
+          <input class="nombreR" type="text" id="nombre" maxlength="50" required placeholder="nombre ">
+          <small class="error"></small>
+        </div>
+        <h3 class="apReg">Apellido</h3>
+        <div class="field">
+          <input class="ApellidoR" type="text" id="apellido" maxlength="100" required placeholder="apellido">
+          <small class="error"></small>
+        </div>
+        <h3 class="emailReg">Correo</h3>
+        <div class="field">
+          <input class="correoR" type="email" id="correo" maxlength="100" required placeholder="correo">
+          <small class="error"></small>
+        </div>
+        <h3 class="passReg">Contraseña</h3>
+        <div class="field">
+          <input class="contraR" type="password" id="password" minlength="4" maxlength="10" required placeholder="contraseña" >
+          <small class="error"></small>
+        </div>
+        <button  class="BtnRegistrarCuenta" type="submit" class="btn">Registrarse</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 SnackPoint</p>
+  </footer>
+  <script src="js/validacionesReg.js"></script>
+</body>
+</html>
